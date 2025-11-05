@@ -1,0 +1,129 @@
+/* ===== GENERAL PAGE STYLE ===== */
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ===== FORM CARD ===== */
+form {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    width: 700px;
+    transition: transform 0.3s ease-in-out;
+}
+
+form:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* ===== TWO COLUMN LAYOUT ===== */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 30px;
+}
+
+/* ===== FORM FIELDS ===== */
+label {
+    display: block;
+    font-size: 14px;
+    color: #34495e;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fafafa;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+}
+
+input:focus,
+select:focus {
+    border-color: #0078d7;
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 0 6px rgba(0, 120, 215, 0.3);
+}
+
+/* ===== BUTTON ===== */
+button {
+    grid-column: span 2; /* Full width in grid */
+    width: 100%;
+    background: #0078d7;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    background: #005fa3;
+}
+
+/* ===== RESULT ===== */
+.result {
+    grid-column: span 2;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.result span {
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.approved {
+    color: #0f5132;
+    background-color: #d1e7dd;
+}
+
+.rejected {
+    color: #842029;
+    background-color: #f8d7da;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    button, .result {
+        grid-column: span 1;
+    }
+}
