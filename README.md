@@ -153,7 +153,7 @@ After evaluating all models, **Logistic Regression** provided the best accuracy 
 
 ---
 
-## 🖥️ Web App Interface
+## 🖥️ User Interface Preview
 <img src="wine_type/static/images/wine_ui.png" width="700">
 <img src="wine_type/static/images/wine_ui_result.png" width="700">
 
