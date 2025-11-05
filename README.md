@@ -1,4 +1,4 @@
-# 🧠 Machine Learning Projects Repository
+# 🧠 Machine Learning Classification Projects Repository
 
 This repository contains two end-to-end Machine Learning projects:
 1. 🏦 Loan Prediction using Machine Learning  
