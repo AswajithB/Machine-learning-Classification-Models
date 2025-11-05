@@ -78,7 +78,9 @@ After evaluating all models, **Logistic Regression** was chosen as the final mod
 
 ---
 
+---
 
+## 🍷 **Wine Type Classification using Machine Learning**
 
 
 ```markdown
